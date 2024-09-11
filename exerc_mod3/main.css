@@ -1,0 +1,126 @@
+/* Seletor especial usado para selecionar todos os elementos da tela */
+* {
+  box-sizing: border-box; /* Encaixa o tamanho do espaçamento dentro da altura */
+  margin: 0;
+  padding: 0;
+
+}
+
+body>header { /* Seletor elemento pai do html, alterar header somente do body */
+  background-color: #2f3640;
+  padding: 16px 0;
+  color: #f5f6fa;
+}
+
+header .container {
+  display: flex;
+  align-items: center; /* Centraliza os itens */
+  justify-content: space-between; /* Espaço igual entre os itens*/
+}
+
+header li {
+  display: inline; /* Forma que o elemento será exibido, pode ser inline (uma linha), block (blocos), none (não quero exibir) */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+header li a {
+  color: #f5f6fa;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/* Container - area de conteudo com aparencia aceitavel independente do tamanho da tela */
+.container {
+  width: 1366px;
+  margin: 0 auto; /* Equivalente a margin: 0 auto 0 auto; */
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap; /* Quando acaba o tamanho da linha, cria outra linha*/
+  justify-content: space-between; /* Espaço iagual entre os itens*/
+}
+
+.articles article img {
+  height: 60%;
+  width: 100%;
+}
+
+.articles article {
+  width: 30%;
+}
+
+section {
+  padding: 16px 0;
+}
+
+section h2,
+.articles article {
+  margin-bottom: 16px;
+}
+
+.articles article h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.articles article a {
+  background-color: blue;
+  color: #fff;
+  padding: 8px;
+  display: inline-block; /* Corrige a sobreposição do conteúdo */
+  text-decoration: none; /* Remove sublinhado do link */
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.articles article a:hover { /*Seletor + estado do elemento */
+  text-decoration: underline; /* Adiciona sublinhado ao link quando o ponteiro do mouse estiver em cima */
+}
+
+.articles article p,
+.articles a {
+  font-family: Arial, Helvetica, sans-serif; /* Fontes */
+}
+
+.articles article h3 {
+  font-size: 24px; /* Tamanho da Fonte*/
+}
+
+section h2 {
+  font-size: 32px;
+}
+
+#sports {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+  background: #009432;
+}
+
+#economy {
+  background-color: rgba(245, 236, 114,0.3);
+}
+
+#economy .articles article a {
+  background: #ff9f1a;
+}
+
+#entertainment {
+  background-color: rgba(226, 136, 186, 0.3);
+}
+
+#entertainment .articles article a {
+  background: #e442c1de ;
+}
+
+#technology {
+  background-color: rgba(118, 30, 233, 0.1);
+}
+
+#technology .articles article a {
+  background: #4304a8b4;
+}
+
